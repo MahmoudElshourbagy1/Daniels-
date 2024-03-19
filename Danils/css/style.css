@@ -1,0 +1,460 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #343434;
+  font-weight: 400;
+  font-size: 14px;
+}
+.bg-main {
+  background-color: #f7f7f7;
+}
+.section-head h3 {
+  font-weight: 900;
+}
+.section-head h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+}
+a {
+  text-decoration: none;
+}
+
+/* nav */
+
+nav .nav-link {
+  position: relative;
+  overflow: hidden;
+  color: black !important;
+}
+nav .active {
+  background-color: transparent !important;
+}
+nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: -100%;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  transition: 0.5s;
+}
+nav .nav-link:hover::after {
+  left: 0;
+}
+
+/* header */
+
+header {
+  background-image: url(../img/bg.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+header .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+a{
+  text-decoration: none;
+  
+}
+header .layer .text h5 {
+  font-size: 3.5rem;
+}
+header .layer .text h1 {
+  font-size: 5rem;
+}
+header .layer .text .icon {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+header .layer .text h1::after {
+  content: "|";
+  animation: typing 10s infinite;
+  font-weight: 300;
+}
+@keyframes typing {
+  1% {
+    content: " |";
+  }
+  2% {
+    content: " L|";
+  }
+  3% {
+    content: " La|";
+  }
+  4% {
+    content: " Lar|";
+  }
+  5% {
+    content: " Larr|";
+  }
+  6% {
+    content: " Larry |";
+  }
+  7% {
+    content: " Lary D|";
+  }
+  8% {
+    content: " Lary Da|";
+  }
+  9% {
+    content: " Lary Dan|";
+  }
+  10% {
+    content: " Lary Dani|";
+  }
+  11% {
+    content: " Lary Danie|";
+  }
+  12% {
+    content: " Lary Daniel|";
+  }
+  13% {
+    content: " Lary Daniels|";
+  }
+  14% {
+    content: " Lary Daniel|";
+  }
+  15% {
+    content: " Lary Danie|";
+  }
+  16% {
+    content: " Lary Dani|";
+  }
+  17% {
+    content: " Lary Dan|";
+  }
+  18% {
+    content: " Lary Da|";
+  }
+  19% {
+    content: " Lary D|";
+  }
+  20% {
+    content: " Lary |";
+  }
+  21% {
+    content: " Lary|";
+  }
+  22% {
+    content: " Lar|";
+  }
+  23% {
+    content: " La|";
+  }
+  24% {
+    content: " L|";
+  }
+  25% {
+    content: " |";
+  }
+  30% {
+    content: " |";
+  }
+  31% {
+    content: " d|";
+  }
+  32% {
+    content: " de|";
+  }
+  33% {
+    content: " dev|";
+  }
+  34% {
+    content: " deve|";
+  }
+  35% {
+    content: " devel|";
+  }
+  36% {
+    content: " develo|";
+  }
+  37% {
+    content: " develop|";
+  }
+  38% {
+    content: " develope|";
+  }
+  39% {
+    content: " developer|";
+  }
+  40% {
+    content: " develope|";
+  }
+  41% {
+    content: " develop|";
+  }
+  42% {
+    content: " develo|";
+  }
+  43% {
+    content: " devel|";
+  }
+  44% {
+    content: " deve|";
+  }
+  45% {
+    content: " dev|";
+  }
+  46% {
+    content: " de|";
+  }
+  60% {
+    content: " de|";
+  }
+  61% {
+    content: " des|";
+  }
+  62% {
+    content: " desi|";
+  }
+  63% {
+    content: " desig|";
+  }
+  64% {
+    content: " design|";
+  }
+  65% {
+    content: " designe|";
+  }
+  66% {
+    content: " designer|";
+  }
+  67% {
+    content: " designe|";
+  }
+  68% {
+    content: " design|";
+  }
+  69% {
+    content: " desig|";
+  }
+  70% {
+    content: " desi|";
+  }
+  71% {
+    content: " des|";
+  }
+  72% {
+    content: " de|";
+  }
+  73% {
+    content: " d|";
+  }
+  74% {
+    content: " |";
+  }
+  100% {
+    content: " |";
+  }
+}
+@media screen and (max-width: 768px) {
+  header .layer .text h1 {
+    font-size: 2rem;
+  }
+}
+
+/* about */
+
+.about .image::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0px;
+  width: 80%;
+  height: 80%;
+  background-image: url(../img/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+.about .skills h6 {
+  font-size: 12px;
+  position: relative;
+}
+.about .skills .progress-1::after {
+  content: "95%";
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+}
+.progress {
+  height: 1.5rem;
+}
+.about .skills .progress-2::after {
+  content: "80%";
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+}
+.about .skills .progress-3::after {
+  content: "90%";
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+}
+.about .buttons .btn-1:hover {
+  background-color: transparent;
+  color: black;
+}
+.about .text {
+  line-height: 1.6;
+  color: #748182;
+}
+
+/* services */
+
+.service .icon {
+  width: 70px;
+  height: 70px;
+  background-color: #f4f4f4;
+  transition: 0.5s;
+  color: black;
+}
+.service .hover:hover .icon {
+  background-color: black;
+  color: white;
+}
+
+/* portfolio */
+
+.portfolio .nav-link {
+  color: black !important;
+  position: relative;
+  overflow: hidden;
+  font-weight: 800;
+}
+.portfolio .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: -100%;
+  background-color: black;
+  width: 100%;
+  height: 3px;
+  transition: 0.5s;
+}
+.portfolio .active {
+  background-color: transparent !important;
+}
+.portfolio .active::after {
+  left: 0;
+}
+.portfolio .icon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+.portfolio .icon:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+.portfolio .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: rgba(255, 255, 255, 0.95);
+  margin-left: 5px;
+  margin-top: 15px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.portfolio .overlay h6 {
+  transition: 1s;
+}
+.portfolio .overlay .icon {
+  transition: 1s;
+}
+.portfolio .image:hover .overlay {
+  opacity: 1;
+  margin-top: 5px;
+}
+.portfolio .image:hover h6 {
+  transform: translateY(5px);
+}
+.portfolio .image:hover .icon {
+  transform: translateY(-10px);
+}
+.portfolio .btn-private {
+  background-color: transparent;
+  border: none;
+}
+/* testimonials */
+
+.testimonials .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #d6d6d6;
+}
+.testimonials .carousel-indicators .active {
+  background-color: #869791;
+}
+
+/* blog */
+
+.blog {
+  min-height: 100vh;
+}
+.blog .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  background-color: #d6d6d6;
+}
+.blog .carousel-indicators .active {
+  background-color: #869791;
+}
+.blog a {
+  color: inherit;
+}
+.blog .image {
+  overflow: hidden;
+}
+.blog .image img {
+  transition: 1s;
+}
+.blog .image img:hover {
+  transform: scale(1.2);
+}
+
+/* contact */
+
+.contact a {
+  color: inherit;
+}
+.contact .icon {
+  width: 70px;
+  height: 70px;
+  background-color: #f4f4f4;
+  transition: 0.5s;
+}
+.contact .item:hover .icon {
+  background-color: black;
+  color: white;
+}
+.contact button:hover {
+  background-color: transparent;
+  color: black;
+}
+.contact .form-control {
+  background-color: #f4f4f4;
+}
+
+/* footer */
+
+footer {
+  background-color: #1c1c1c;
+  padding: 30px;
+}
